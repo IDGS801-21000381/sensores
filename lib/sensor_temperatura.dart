@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class SensorTemperaturePage extends StatefulWidget {
+class SensorTemperaturaPage extends StatefulWidget {
   @override
-  _SensorTemperaturePageState createState() => _SensorTemperaturePageState();
+  _SensorTemperaturaPage createState() => _SensorTemperaturaPage();
 }
 
-class _SensorTemperaturePageState extends State<SensorTemperaturePage> {
+class _SensorTemperaturaPage extends State<SensorTemperaturaPage> {
   // Note: Temperature sensors are rare in smartphones, usually available only on specific devices or in external devices.
   double _temperature = 25.0; // Mock data as an example.
 

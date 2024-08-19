@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:sensors_plus/sensors_plus.dart';
 
-class SensorAccelerometerPage extends StatefulWidget {
+class SensorAcceleracionPage extends StatefulWidget {
   @override
   _SensorAccelerometerPageState createState() =>
       _SensorAccelerometerPageState();
 }
 
-class _SensorAccelerometerPageState extends State<SensorAccelerometerPage> {
+class _SensorAccelerometerPageState extends State<SensorAcceleracionPage> {
   double _x = 0.0, _y = 0.0, _z = 0.0;
 
   @override

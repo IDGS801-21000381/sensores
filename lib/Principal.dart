@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 //import 'sensor_brightness.dart';
-import 'sensor_orientation.dart';
-// import 'sensor_proximity.dart';
-import 'sensor_accelerometer.dart';
-import 'sensor_magnetometer.dart';
+import 'sensor_orientatacion.dart';
+// import 'sensor_proximidad.dart';
+import 'sensor_acceleracion.dart';
+import 'sensor_magnometro.dart';
 //import 'sensor_barometer.dart';
-import 'sensor_fingerprint.dart';
-import 'sensor_temperature.dart';
-import 'sensor_voice_recognition.dart';
-import 'sensor_color_detection.dart';
-import 'sensor_location.dart';
+import 'sensor_huella.dart';
+import 'sensor_temperatura.dart';
+import 'sensor_voz.dart';
+import 'sensor_color.dart';
+import 'sensor_localizacion.dart';
 
 class PrincipalPage extends StatelessWidget {
   @override
@@ -30,23 +30,23 @@ class PrincipalPage extends StatelessWidget {
           // _buildSensorItem(context, 'Sensor de Brillo', Icons.wb_sunny,
           //     SensorBrightnessPage()),
           _buildSensorItem(context, 'Sensor de Orientación',
-              Icons.screen_rotation, SensorOrientationPage()),
+              Icons.screen_rotation, SensorOrientatacionPage()),
           // _buildSensorItem(context, 'Sensor de Proximidad', Icons.sensors,
           //     SensorProximityPage()),
           _buildSensorItem(context, 'Sensor Acelerómetro', Icons.directions_run,
-              SensorAccelerometerPage()),
+              SensorAcceleracionPage()),
           _buildSensorItem(context, 'Sensor Magnetómetro', Icons.explore,
               SensorMagnetometerPage()),
           // _buildSensorItem(
           //     context, 'Sensor Barómetro', Icons.speed, SensorBarometerPage()),
           _buildSensorItem(context, 'Sensor de Huellas', Icons.fingerprint,
-              SensorFingerprintPage()),
+              SensorbrilloPage()),
           _buildSensorItem(context, 'Sensor de Temperatura', Icons.thermostat,
-              SensorTemperaturePage()),
+              SensorTemperaturaPage()),
           _buildSensorItem(context, 'Transcribir lo que escucha', Icons.mic,
-              SensorVoiceRecognitionPage()),
+              SensorVozPage()),
           _buildSensorItem(context, 'Detección de Colores', Icons.color_lens,
-              SensorColorDetectionPage()),
+              SensorColorPage()),
           _buildSensorItem(context, 'Ubicación con Google Maps',
               Icons.location_on, SensorLocationPage()),
         ],

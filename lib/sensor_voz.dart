@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:speech_to_text/speech_to_text.dart' as stt;
 
-class SensorVoiceRecognitionPage extends StatefulWidget {
+class SensorVozPage extends StatefulWidget {
   @override
-  _SensorVoiceRecognitionPageState createState() =>
-      _SensorVoiceRecognitionPageState();
+  _SensorVozPageState createState() => _SensorVozPageState();
 }
 
-class _SensorVoiceRecognitionPageState
-    extends State<SensorVoiceRecognitionPage> {
+class _SensorVozPageState extends State<SensorVozPage> {
   stt.SpeechToText _speechToText = stt.SpeechToText();
   bool _isListening = false;
   String _text = "Presiona el botón para comenzar a hablar";

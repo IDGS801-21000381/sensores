@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:sensors_plus/sensors_plus.dart';
 
-class SensorOrientationPage extends StatefulWidget {
+class SensorOrientatacionPage extends StatefulWidget {
   @override
-  _SensorOrientationPageState createState() => _SensorOrientationPageState();
+  _SensorOrientatacionPage createState() => _SensorOrientatacionPage();
 }
 
-class _SensorOrientationPageState extends State<SensorOrientationPage> {
+class _SensorOrientatacionPage extends State<SensorOrientatacionPage> {
   String _orientation = 'Unknown';
 
   @override

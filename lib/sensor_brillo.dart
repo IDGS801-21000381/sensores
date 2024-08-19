@@ -1,12 +1,12 @@
 // import 'package:flutter/material.dart';
 // import 'package:light/light.dart';
 
-// class SensorBrightnessPage extends StatefulWidget {
+// class SensorBrilloPage extends StatefulWidget {
 //   @override
 //   _SensorBrightnessPageState createState() => _SensorBrightnessPageState();
 // }
 
-// class _SensorBrightnessPageState extends State<SensorBrightnessPage> {
+// class _SensorBrightnessPageState extends State<SensorBrilloPage> {
 //   Light _light;
 //   String _luxValue = 'Unknown';
 

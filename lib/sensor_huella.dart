@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:local_auth/local_auth.dart';
 
-class SensorFingerprintPage extends StatefulWidget {
+class SensorbrilloPage extends StatefulWidget {
   @override
-  _SensorFingerprintPageState createState() => _SensorFingerprintPageState();
+  _SensorbrilloPage createState() => _SensorbrilloPage();
 }
 
-class _SensorFingerprintPageState extends State<SensorFingerprintPage> {
+class _SensorbrilloPage extends State<SensorbrilloPage> {
   final LocalAuthentication auth = LocalAuthentication();
   String _authorized = 'Not Authorized';
 

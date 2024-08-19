@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:palette_generator/palette_generator.dart';
 
-class SensorColorDetectionPage extends StatefulWidget {
+class SensorColorPage extends StatefulWidget {
   @override
   _SensorColorDetectionPageState createState() =>
       _SensorColorDetectionPageState();
 }
 
-class _SensorColorDetectionPageState extends State<SensorColorDetectionPage> {
+class _SensorColorDetectionPageState extends State<SensorColorPage> {
   Color _dominantColor = Colors.transparent;
   final ImagePicker _picker = ImagePicker();
 
