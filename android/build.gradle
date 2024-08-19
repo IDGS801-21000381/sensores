@@ -1,0 +1,41 @@
+// Archivo build.gradle a nivel de proyecto
+
+buildscript {
+    ext.kotlin_version = '1.8.0'  // Define la versión de Kotlin que se va a utilizar
+    repositories {
+        google()  // Repositorio de Google para dependencias
+        mavenCentral()  // Repositorio de Maven Central para dependencias
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"  // Plugin de Kotlin para Gradle
+        // Otros classpaths necesarios, como el de Gradle para Android o Hilt, se agregarían aquí.
+        // classpath "com.android.tools.build:gradle:7.2.2"
+        // classpath "com.google.dagger:hilt-android-gradle-plugin:2.42"
+    }
+}
+
+// Configuración común para todos los proyectos dentro del repositorio
+allprojects {
+    repositories {
+        google()  // Repositorio de Google para dependencias
+        mavenCentral()  // Repositorio de Maven Central para dependencias
+    }
+}
+
+// Configuración del directorio de construcción a nivel del proyecto raíz
+rootProject.buildDir = "../build"
+
+// Configuración para subproyectos
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"  // Define el directorio de construcción de cada subproyecto
+}
+
+// Asegura que el proyecto "app" se evalúe primero
+subprojects {
+    project.evaluationDependsOn(":app")  // Indica que los otros proyectos dependen del proyecto ":app"
+}
+
+// Tarea personalizada para limpiar el directorio de construcción
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir  // Elimina el directorio de construcción del proyecto raíz
+}
